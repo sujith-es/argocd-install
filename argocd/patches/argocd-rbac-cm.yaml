@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: argocd-rbac-cm
+ name: argocd-cm
 data:
-  policy.default: role:readonly
+ accounts.sujith: apiKey, login
+#  admin.enabled: "false" 
